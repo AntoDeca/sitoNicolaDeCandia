@@ -1,0 +1,59 @@
+.logo-container img {
+  width: 25rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footercontacts-title {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-list li {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+}
+.footer-adress {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+@media (max-width: 47.5em) {
+  .footer-list li {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
+
+  .personalCard {
+    grid-column: 1/3;
+  }
+
+  .logo-container img {
+    width: 15rem;
+  }
+}
+@media (max-width: 36.5em) {
+  .footer-list li {
+    font-size: 1.4rem;
+  }
+  .footercontacts-title {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+}

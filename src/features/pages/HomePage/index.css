@@ -1,0 +1,18 @@
+/*
+BACKGROUND:#EEF4FA*/
+
+.hero-section {
+  padding: 4.8rem 0 9.6rem 0;
+  /* background-color: #eef4fa; */
+  transition: all 1s ease-in;
+}
+
+.skills-section {
+  padding: 4.8rem 0 9.6rem 0;
+  transition: all 1s ease-in;
+}
+
+.footer-section {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #eef4fa;
+}

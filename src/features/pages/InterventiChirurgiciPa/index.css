@@ -1,0 +1,34 @@
+.interventi-section {
+  padding: 9.8rem 4.8rem;
+}
+
+.interventi-title {
+  font-size: 3.2rem;
+}
+.interventi-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.animation-box img {
+  width: 100%;
+}
+
+.interventi-text p,
+li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.interventi-list {
+  margin-left: 1.6rem;
+}
+@media (max-width: 40.6em) {
+  .interventi-container {
+    grid-template-columns: 1fr;
+  }
+
+  .interventi-section {
+    padding: 9.2rem 4.2rem;
+  }
+}

@@ -1,0 +1,113 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 2s ease-in-out;
+  z-index: 20;
+  background-color: #fff;
+  height: 100%;
+}
+
+.navbar-logo {
+  font-size: 2.4rem;
+}
+
+.logo {
+  width: 18rem;
+}
+
+.on {
+  color: #274494;
+  font-weight: 700;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.navbar-link:link.on,
+.navbar-link:visited.on {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #274494;
+  font-weight: 700;
+}
+
+.navbar-link:hover {
+  color: #274494;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+@media (max-width: 70em) {
+  .navbar-list {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 18.2rem;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background-color: #f5f7fa;
+    box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+    transition: all 0.2s ease-in-out;
+    padding: 1.2rem;
+    opacity: 1;
+  }
+
+  .navbar-active {
+    right: 0px;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .navbar-list li {
+    margin-bottom: 2rem;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+}

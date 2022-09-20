@@ -1,0 +1,29 @@
+.skills-box-title {
+  font-size: 4.4rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+.skills-box-subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 60em) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 36.5em) {
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}
