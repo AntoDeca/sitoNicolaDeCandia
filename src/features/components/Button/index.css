@@ -14,6 +14,9 @@ COLOR:#5E3BEE
   text-decoration: none;
   -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
   box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  /* Aggiunta */
+  position: relative;
+  overflow: hidden;
 }
 
 .small {
@@ -35,8 +38,16 @@ COLOR:#5E3BEE
   color: #ffff;
 }
 
+.stroke:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-content {
+  position: relative;
+  z-index: 1;
+}
+
 .stroke:hover {
-  background: transparent;
   outline: none;
   transform: translateY(-1rem);
   background: rgb(29, 51, 110);

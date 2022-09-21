@@ -15,7 +15,9 @@ function InterventiChirurgigiPage() {
           ></LazyLoadImage>
         </div>
         <div className='interventi-text'>
-          <h2 className='interventi-title'>Interventi Chirurgici</h2>
+          <h2 className='interventi-title'>
+            <span className='color'>Interventi</span> Chirurgici
+          </h2>
           <p>
             Principali interventi chirurgici effettuati dal dott. Nicola De
             Candia:

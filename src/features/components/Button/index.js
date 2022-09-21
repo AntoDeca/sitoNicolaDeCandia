@@ -3,7 +3,7 @@ import './index.css';
 function Button({ children, type, className, onClick }) {
   return (
     <a href='##' onClick={onClick} className={`btn ${type} ${className}`}>
-      {children}
+      <span className='btn-content'>{children}</span>
     </a>
   );
 }

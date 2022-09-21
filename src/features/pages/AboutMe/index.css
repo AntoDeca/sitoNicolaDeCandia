@@ -10,14 +10,9 @@
 }
 .aboutme-imgcontainer {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
-}
-
-.aboutme-content {
-  /* border-right: 2px solid rgb(39, 68, 148);
-  padding: 1rem; */
 }
 
 .aboutme-title {

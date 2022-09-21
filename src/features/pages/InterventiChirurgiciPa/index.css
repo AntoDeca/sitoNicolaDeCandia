@@ -4,6 +4,7 @@
 
 .interventi-title {
   font-size: 3.2rem;
+  font-weight: 500;
 }
 .interventi-container {
   display: grid;

@@ -18,6 +18,7 @@ function SlideShow() {
           className='hero-text'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          transition={{ duration: 3 }}
         >
           <h1 className='hero-heading'>otorinodecandia</h1>
           <Button className='big-btn' type='stroke' onClick={clickHandler}>

@@ -49,16 +49,16 @@ function ContactPage() {
             <li>
               <div className='contacts-adress'>
                 <BsFillTelephoneFill fill='rgb(39, 68, 148)' />
-                <a className='phone-link' href='tel:+39 330786177 '>
-                  +39 330786177
+                <a className='phone-link' href='tel:080 5219334'>
+                  080 5219334
                 </a>
               </div>
             </li>
             <li>
               <div className='contacts-adress'>
                 <BsFillTelephoneFill fill='rgb(39, 68, 148)' />
-                <a className='phone-link' href='tel:080 5219334'>
-                  080 5219334
+                <a className='phone-link' href='tel:+39 330786177 '>
+                  +39 330786177
                 </a>
               </div>
             </li>
@@ -122,7 +122,7 @@ function ContactPage() {
           </p>
         </div>
         <div className='mezzipublicihowto'>
-          <h2 className='howtoreach-title'>MezziPublici</h2>
+          <h2 className='howtoreach-title'>Mezzi Publici</h2>
           <p>
             È possibile raggiungere lo studio del dott. De Candia con le
             seguenti linee AMTAB (fermata Piazza Aldo Moro): 2, 3, 6, 7, 11,

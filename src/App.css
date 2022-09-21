@@ -11,6 +11,11 @@
   margin-bottom: 1rem;
 }
 
+.subfooter-section {
+  padding: 2rem;
+  background-color: rgb(39, 68, 148);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

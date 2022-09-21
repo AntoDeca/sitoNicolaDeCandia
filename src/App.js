@@ -1,14 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import HomePage from './features/pages/HomePage';
 import NavBar from './features/components/NavBar';
 import Footer from './features/components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutMe from './features/pages/AboutMe';
-import ExamsPage from './features/pages/ExamsPage';
 import ContactPage from './features/pages/ContactPage';
 import CasiCliniciPage from './features/pages/CasiCliniciPage';
 import InterventiChirurgigiPage from './features/pages/InterventiChirurgiciPa';
+import SubFooter from './features/components/SubFooter';
 function App() {
   return (
     <>
@@ -26,6 +25,9 @@ function App() {
         </Routes>
         <section className='footer-section'>
           <Footer />
+        </section>
+        <section className='subfooter-section'>
+          <SubFooter />
         </section>
       </Router>
     </>

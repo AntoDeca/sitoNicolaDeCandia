@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './index.css';
 import logo from '../../../assets/logotest.png';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ImCross } from 'react-icons/im';
 import { FaBars } from 'react-icons/fa';
 function NavBar() {
-  const [fix, setFix] = useState(false);
   const [active, setActive] = useState(window.location.href.split('/')[3]);
   const [mobile, setMobile] = useState(false);
-  const params = useParams();
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -16,7 +14,6 @@ function NavBar() {
   };
 
   useEffect(() => {
-    console.log(window.location.href.split('/')[3]);
     setActive(window.location.href.split('/')[3]);
   }, [window.location.href]);
 
@@ -28,6 +25,7 @@ function NavBar() {
   const gotoHome = (e) => {
     e.preventDefault();
     navigateFunction('/');
+    setMobile(!mobile);
   };
   const gotoAbout = (e) => {
     e.preventDefault();
@@ -53,7 +51,12 @@ function NavBar() {
   return (
     <header className='nav'>
       <nav className={`navbar ${mobile && 'navbar-mobile'}`}>
-        <div className='logowrapper'>
+        <div
+          className='logowrapper'
+          onClick={() => {
+            navigateFunction('/');
+          }}
+        >
           <img className='logo' src={logo} alt={logo}></img>
         </div>
         <ul
@@ -72,7 +75,7 @@ function NavBar() {
               href='##'
               className={` navbar-link ${active === 'about' ? 'on' : ''}`}
             >
-              ABOUT ME
+              AboutMe
             </a>
           </li>
           <li onClick={gotoInterventi}>
@@ -80,7 +83,7 @@ function NavBar() {
               href='##'
               className={`navbar-link ${active === 'interventi' ? 'on' : ''}`}
             >
-              INTERVENTI CHIRURGICI
+              Interventi
             </a>
           </li>
           <li onClick={gotoCasiClinici}>
@@ -88,7 +91,7 @@ function NavBar() {
               href='##'
               className={`navbar-link ${active === 'casiClinici' ? 'on' : ''}`}
             >
-              CASI CLINICI
+              Casi Clinici
             </a>
           </li>
           <li onClick={gotoContatti}>
@@ -96,7 +99,7 @@ function NavBar() {
               href='##'
               className={`navbar-link ${active === 'contatti' ? 'on' : ''}`}
             >
-              CONTATTI
+              Contatti
             </a>
           </li>
         </ul>

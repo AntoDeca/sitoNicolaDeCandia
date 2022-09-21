@@ -25,6 +25,7 @@
 
 .logo {
   width: 18rem;
+  cursor: pointer;
 }
 
 .on {
@@ -59,7 +60,20 @@
 .navbar-link:hover {
   color: #274494;
   cursor: pointer;
+  transition: all 0.5s ease-in;
 }
+
+/* .navbar-link:hover::after,
+.navbar-link.on::after {
+  content: '';
+  width: 70%;
+  height: 0.2rem;
+  background-color: #274494;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0.5rem;
+  z-index: 40;
+} */
 
 .mobile-menu-icon {
   padding: 1rem;
