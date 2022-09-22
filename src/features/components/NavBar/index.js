@@ -57,7 +57,11 @@ function NavBar() {
             navigateFunction('/');
           }}
         >
-          <img className='logo' src={logo} alt={logo}></img>
+          <img
+            className='logo'
+            src={logo}
+            alt={'logo Dottore Nicola De Candia Bari'}
+          ></img>
         </div>
         <ul
           className={`navbar-list ${mobile ? 'navbar-active' : 'navbar-close'}`}

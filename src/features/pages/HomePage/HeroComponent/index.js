@@ -47,7 +47,11 @@ function HeroComponent() {
         </Button>
       </div>
       <div className='hero-imagebox'>
-        <img className='hero-image' alt='Ciao' src={papa} />
+        <img
+          className='hero-image'
+          alt='foto dottore Nicola De Candia Bari'
+          src={papa}
+        />
       </div>
     </div>
   );

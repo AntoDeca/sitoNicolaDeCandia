@@ -1,5 +1,8 @@
 import React from 'react';
 import './index.css';
+import ReactPlayer from 'react-player';
+import settoplasticaendoscopica from '../../../assets/settoplastica.mp4';
+import poliposi from '../../../assets/poliposi.mp4';
 function CasiCliniciPage() {
   return (
     <section className='casiClinici-section'>
@@ -9,47 +12,19 @@ function CasiCliniciPage() {
           <p>Alcuni casi clinici eseguiti dal dott. Nicola De Candia.</p>
         </div>
         <div className='video-box'>
-          <h2 className='videobox-title'>
-            Decongestione sottomucosa dei turbinati mediante debrider
-          </h2>
+          <h2 className='videobox-title'>Settoplastica Endoscopica</h2>
           <div className='video'>
-            <iframe
-              width='100%'
-              height='500'
-              src='https://www.youtube.com/embed/gRfU3dUNldw'
-              title='Decongestione sottomucosa dei turbinati mediante debrider'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-        <div className='video-box'>
-          <h2 className='videobox-title'>Settoplastica endoscopica</h2>
-          <div className='video'>
-            <iframe
-              width='100%'
-              height='500'
-              src='https://www.youtube.com/embed/-8dfnwOj9_w'
-              title='video intervento settoplastica endoscopica'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
-            ></iframe>
+            <video controls width={'100%'}>
+              <source src={settoplasticaendoscopica} type='video/mp4' />
+            </video>
           </div>
         </div>
         <div className='video-box'>
           <h2 className='videobox-title'>Poliposi nasale</h2>
           <div className='video'>
-            <iframe
-              width='100%'
-              height='500'
-              src='https://www.youtube.com/embed/jpXzJQHYqJo'
-              title='video intervento poliposi'
-              frameborder='0'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-              allowfullscreen
-            ></iframe>
+            <video controls width={'100%'}>
+              <source src={poliposi} type='video/mp4' />
+            </video>
           </div>
         </div>
       </div>

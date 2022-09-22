@@ -31,16 +31,18 @@
 
 .aboutmedocenza-title {
   font-size: 2.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.1rem;
+  color: rgb(39, 68, 148);
 }
 
 .aboutme-spec {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-style: italic;
 }
 .aboutme-text {
   font-size: 1.8rem;
-  color: rgb(57, 57, 57);
+  color: rgb(7, 7, 7);
   line-height: 1.5;
 }
 .aboutme-list {
@@ -48,7 +50,7 @@
 }
 .aboutme-list li {
   font-size: 1.8rem;
-  color: rgb(57, 57, 57);
+  color: rgb(7, 7, 7);
   line-height: 1.5;
 }
 @media (max-width: 40.6em) {

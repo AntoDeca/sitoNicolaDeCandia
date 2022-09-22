@@ -18,7 +18,9 @@ function AboutMe() {
       <div className='aboutme-container container'>
         <div className='aboutme-content'>
           <div className='aboutme-header'>
-            <h1 className='aboutme-doc'>Dott. Nicola De Candia</h1>
+            <h1 className='aboutme-doc'>
+              <span className='color'>Dott.</span>Nicola De Candia
+            </h1>
             <p className='aboutme-spec'>Otorinolaringoiatria-Neurochirurgo</p>
             <h2 className='aboutme-title'>Curriculum Vitae</h2>
           </div>
@@ -34,9 +36,10 @@ function AboutMe() {
             <span className='color'> Medico-Chirurgo</span> nella II sessione
             del 1987, riportando la votazione di{' '}
             <span className='color'>110/110</span> ; si è iscritto alla scuola
-            di specializzazione in Otorinolaringoiatria presso l'Università di
-            Bari nell'anno accademico 1987/88, specializzandosi nella stessa
-            sede il 28/1/1991, riportando la votazione di{' '}
+            di specializzazione in
+            <span className='color'> Otorinolaringoiatria</span> presso
+            l'Università di Bari nell'anno accademico 1987/88, specializzandosi
+            nella stessa sede il 28/1/1991, riportando la votazione di{' '}
             <span className='color'>50/50 e lode</span>;<br></br>
             <br></br>
             Si è iscritto alla Scuola di Specializzazione in{' '}
@@ -246,7 +249,7 @@ function AboutMe() {
           <LazyLoadImage
             className='aboutme-img'
             src={papa2}
-            alt={papa2}
+            alt={'foto dottore Nicola De Candia Bari'}
             placeholderSrc={papa2placeholder}
             effect='blur'
           ></LazyLoadImage>
