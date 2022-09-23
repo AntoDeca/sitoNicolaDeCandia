@@ -1,6 +1,5 @@
 .casiClinici-section {
   padding: 4.8rem 0 9.6rem 0;
-  background-color: #eef4fa;
 }
 
 .casiClinici-title {
@@ -17,8 +16,8 @@
 .videobox-title {
   font-size: 2.4rem;
   margin-bottom: 2rem;
-  font-weight: 500;
-  color: rgb(63, 63, 63);
+  font-weight: 400;
+  color: rgb(0, 0, 0);
 }
 
 .video {
@@ -26,4 +25,7 @@
   margin-bottom: 1rem;
   overflow: hidden;
   border-radius: 4rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }

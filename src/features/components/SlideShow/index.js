@@ -30,13 +30,13 @@ function SlideShow() {
             <motion.div
               initial={{ width: 0 }}
               animate={{ width: '35rem' }}
-              transition={{ duration: 4, delay: 1.4 }}
+              transition={{ duration: 4, delay: 1.1 }}
               className='underline'
             ></motion.div>
           </div>
 
           <Button className='big-btn' type='stroke' onClick={clickHandler}>
-            Prenota una visita
+            Contattaci
           </Button>
         </motion.div>
       </AnimatePresence>

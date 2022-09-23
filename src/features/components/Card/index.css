@@ -3,7 +3,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   border-radius: 1rem;
   transition: all 0.2s;
   padding: 2rem;
@@ -27,7 +27,15 @@
 .card-list {
   margin-left: 1.4rem;
 }
+.card-list-exam .list-item {
+  display: flex;
+}
 
+.card-icon {
+  height: 3rem;
+  width: 3rem;
+  fill: rgb(73, 118, 241);
+}
 .card-list {
   font-size: 1.6rem;
 }

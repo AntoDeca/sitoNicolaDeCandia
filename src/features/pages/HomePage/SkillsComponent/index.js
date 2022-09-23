@@ -66,7 +66,7 @@ function SkillsComponent() {
           type='exam'
           icon={GoCheck}
           list={[
-            'esame audiometrico tonale',
+            'esame audiometrico ',
             'esame impedenzometrico',
             'prove vestibolari',
             'otoendoscopia',
