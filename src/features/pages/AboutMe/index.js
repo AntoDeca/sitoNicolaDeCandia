@@ -6,17 +6,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useInView } from 'react-intersection-observer';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import BlobAnimation from '../../components/BlobAnimated';
 function AboutMe() {
   const { ref: aboutmeRef, inView: heroVisible } = useInView();
   return (
     <section
       className={`aboutme-section ${
-        heroVisible === true ? '' : 'section-hidden'
+        heroVisible === true ? '' : 'section-hidden-left'
       }`}
       ref={aboutmeRef}
     >
       <div className='aboutme-container container'>
-        <div className='aboutme-content'>
+        <div
+          className={`aboutme-content ${
+            heroVisible === true ? '' : 'section-hidden-left'
+          }`}
+        >
           <div className='aboutme-header'>
             <h1 className='aboutme-doc'>
               <span className='color'>Dott.</span>Nicola De Candia

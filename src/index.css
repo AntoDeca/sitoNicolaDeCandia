@@ -71,9 +71,14 @@ html {
   overflow-x: hidden;
 }
 
-.section-hidden {
+.section-hidden-left {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateX(-10rem);
+}
+
+.section-hidden-bottom {
+  opacity: 0;
+  transform: translateY(+10rem);
 }
 
 body {
@@ -105,5 +110,9 @@ h3 {
 @media (max-width: 78.25em) {
   html {
     font-size: 58%;
+  }
+
+  .slider {
+    flex-direction: column;
   }
 }

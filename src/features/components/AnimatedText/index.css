@@ -1,0 +1,14 @@
+.header-text {
+  color: #ffff;
+  font-size: 6rem;
+}
+
+.normal-text {
+  font-weight: 400;
+}
+
+@media (max-width: 47.5em) {
+  .normal-text {
+    font-size: 1.8rem;
+  }
+}

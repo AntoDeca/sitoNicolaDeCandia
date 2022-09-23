@@ -6,6 +6,7 @@ import SlideShow from '../../components/SlideShow';
 import HeroComponent from './HeroComponent';
 import './index.css';
 import SkillsComponent from './SkillsComponent';
+import BlobAnimation from '../../components/BlobAnimated';
 function HomePage() {
   const { ref: heroRef, inView: heroVisible } = useInView();
   const { ref: skillsRef, inView: skillsVisibile } = useInView();
@@ -16,7 +17,7 @@ function HomePage() {
       </section>
       <section
         className={`hero-section ${
-          heroVisible === true ? '' : 'section-hidden'
+          heroVisible === true ? '' : 'section-hidden-left'
         }`}
         ref={heroRef}
       >
@@ -24,7 +25,7 @@ function HomePage() {
       </section>
       <section
         className={`skills-section ${
-          skillsVisibile === true ? '' : 'section-hidden'
+          skillsVisibile === true ? '' : 'section-hidden-bottom'
         }`}
         ref={skillsRef}
       >

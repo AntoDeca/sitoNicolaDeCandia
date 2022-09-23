@@ -12,6 +12,15 @@
   position: relative;
 }
 
+.hero-image {
+  width: 80%;
+  z-index: 3;
+  transition: all 0.2s;
+}
+.hero-imagebox:hover .hero-image {
+  transform: scale(1.1);
+}
+
 .hero-imagebox::before {
   content: '';
   display: block;
@@ -25,6 +34,7 @@
 
   /* 60% of parent's width */
   padding-bottom: 60%;
+  transition: all 0.5s;
 
   background-color: rgba(39, 68, 148, 0.723);
   z-index: 2;
@@ -35,11 +45,6 @@
   padding-bottom: 1.2rem;
   font-weight: 500;
   font-style: italic;
-}
-
-.hero-image {
-  width: 80%;
-  z-index: 3;
 }
 
 .hero-description {

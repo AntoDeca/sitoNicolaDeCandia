@@ -2,9 +2,16 @@ import React from 'react';
 import './index.css';
 import surge from '../../../assets/surge.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useInView } from 'react-intersection-observer';
 function InterventiChirurgigiPage() {
+  const { ref: interventiRef, inView: interventiVisible } = useInView();
   return (
-    <section className='interventi-section'>
+    <section
+      className={`interventi-section ${
+        interventiVisible === true ? '' : 'section-hidden-bottom'
+      }`}
+      ref={interventiRef}
+    >
       <div className='container interventi-container'>
         <div className='animation-box'>
           <LazyLoadImage

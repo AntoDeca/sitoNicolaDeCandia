@@ -8,7 +8,9 @@ function CasiCliniciPage() {
     <section className='casiClinici-section'>
       <div className='container'>
         <div className='casiclinici-header'>
-          <h2 className='casiClinici-title'>Casi Clinici</h2>
+          <h2 className='casiClinici-title'>
+            <span className='color'>Casi</span> Clinici
+          </h2>
           <p>Alcuni casi clinici eseguiti dal dott. Nicola De Candia.</p>
         </div>
         <div className='video-box'>

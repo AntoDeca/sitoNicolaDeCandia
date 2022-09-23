@@ -15,6 +15,34 @@
   width: 100%;
   height: 120rem;
   padding: 2rem;
+  gap: 2rem;
+}
+
+.slideshow-list {
+  list-style: none;
+}
+
+.header-text {
+  font-size: 4rem;
+}
+
+.slideshow-list-icon {
+  fill: rgb(195, 193, 223);
+  width: 3rem;
+  height: 3rem;
+}
+
+.slideshow-box {
+  display: flex;
+  align-items: center;
+}
+
+.slideshow-list li p {
+  font-size: 2.4rem;
+  color: #ffff;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 1.9;
 }
 
 .image {
@@ -45,12 +73,55 @@
   font-size: 4.4rem;
   color: rgb(39, 68, 148);
 }
+
+.location-slide {
+  display: flex;
+  align-items: center;
+}
+
+.hero-heading-box {
+  position: relative;
+}
+
+.underline {
+  position: relative;
+  top: -1.6rem;
+  background-color: rgb(39, 68, 148);
+  height: 1.4rem;
+}
+
+.location-slide > h2 {
+  font-size: 4rem;
+  color: #ffff;
+}
+
+.location-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: blue;
+}
+
 /* linear-gradient(
       357deg,
       rgb(81, 81, 81) 1%,
       rgba(76, 74, 74, 0.139) 100%,
       rgba(187, 162, 162, 0) 100%
     ), */
+
+@media (max-width: 70em) {
+  .hero-heading {
+    font-size: 8rem;
+  }
+  .underline {
+    top: -0.9rem;
+  }
+}
+
+@media (max-width: 47.5em) {
+  .slider {
+    flex-direction: column;
+  }
+}
 @media (max-width: 36.5em) {
   .hero-heading {
     font-size: 5rem;
