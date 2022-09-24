@@ -14,7 +14,7 @@ function ContactPage() {
             <li>
               <div className='contacts-adress'>
                 <ImLocation fill='rgb(39, 68, 148)' />
-                <p>Via N.Dall'Arca 19</p>
+                <p>Via N.Dall'Arca 19 Bari</p>
               </div>
             </li>
           </ul>
@@ -85,13 +85,11 @@ function ContactPage() {
         ></iframe>
       </div>
       <div className='container howtoreach-container'>
-        <h2 className='howtoreach-bigtitle'>
-          Come raggiungere lo studio otologico di Bari:
-        </h2>
-        <p>
-          Lo studio otologico del dott. De Candia è situato nel centro di Bari a
-          pochi metri dalla Stazione ferroviaria. Coordinate geografiche:
-          41.119438 - 16.870731
+        <h2 className='howtoreach-bigtitle'>Come raggiungere lo studio</h2>
+        <p className='description'>
+          Lo studio del dott. De Candia è situato nel centro di Bari a pochi
+          metri dalla Stazione ferroviaria. Coordinate geografiche: 41.119438 -
+          16.870731
         </p>
         <div className='carhowto'>
           <h2 className='howtoreach-title'>Auto</h2>

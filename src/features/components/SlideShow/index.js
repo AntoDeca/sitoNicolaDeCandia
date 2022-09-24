@@ -21,24 +21,25 @@ function SlideShow() {
           animate={{ opacity: 1 }}
           transition={{ duration: 3 }}
         >
-          <div className='location-slide'>
-            <ImLocation className='location-icon' />
-            <h2 className=''>Bari</h2>
-          </div>
           <div className='hero-heading-box'>
-            <h1 className='hero-heading'>otorinodecandia</h1>
+            <h1 className='hero-heading'>Dott. Nicola De Candia</h1>
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: '35rem' }}
+              animate={{ width: '100%' }}
               transition={{ duration: 4, delay: 1.1 }}
               className='underline'
             ></motion.div>
+          </div>
+          <div className='slider-specialities'>
+            <h2 className='slider-spec'>Specialista in OtorinoLaringoiatria</h2>
+            <h2 className='slider-spec'>Specialista in NeuroChirurgia</h2>
           </div>
 
           <Button className='big-btn' type='stroke' onClick={clickHandler}>
             Contattaci
           </Button>
         </motion.div>
+        <div className='overlay'></div>
       </AnimatePresence>
     </div>
   );

@@ -63,6 +63,10 @@
     align-items: center;
   }
 
+  .hero-title {
+    font-size: 3.6rem;
+  }
+
   .hero-image {
     width: 50%;
   }

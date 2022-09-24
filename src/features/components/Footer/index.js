@@ -19,7 +19,7 @@ function Footer() {
           <li>
             <div className='footer-adress'>
               <ImLocation fill='rgb(39, 68, 148)' />
-              <p>Via N.Dall'Arca 19</p>
+              <p>Via N.Dall'Arca 19 Bari</p>
             </div>
           </li>
           <li>

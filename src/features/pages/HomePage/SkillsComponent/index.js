@@ -12,10 +12,6 @@ function SkillsComponent() {
       <h2 className='skills-box-title'>
         <span className='color'>Patologie</span> trattate
       </h2>
-      <h3 className='skills-box-subtitle'>
-        Il dott.Nicola De Candia esegue i seguenti esami clinici presso il suo
-        studio a Bari
-      </h3>
       <div className='card-container'>
         <Card
           title={'Naso'}
@@ -32,7 +28,7 @@ function SkillsComponent() {
             ' Mucocele',
             'Varici settali-epistassi',
             'Deviazione del setto nasale',
-            'Tumori benigni e maligni (pailloma invertito, osteoma, etc.)',
+            'Tumori benigni e maligni (papilloma invertito, osteoma, etc.)',
           ]}
         />
         <Card
